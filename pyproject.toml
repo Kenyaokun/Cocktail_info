@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cocktail_info"
+version = "0.1.0"
+description = "Get the information of cocktails."
+authors = ["Kun Yao"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
