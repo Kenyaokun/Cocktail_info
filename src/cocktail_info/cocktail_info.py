@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-#imoprt the module we need
 import requests
 import json
 import pandas as pd
@@ -14,10 +7,6 @@ from IPython.display import Image, HTML
 get_ipython().run_line_magic('matplotlib', 'inline')
 import warnings
 warnings.filterwarnings('ignore')
-
-
-# In[2]:
-
 
 def get_id(text):
     '''
@@ -72,10 +61,6 @@ def get_id(text):
         cock_id_new.rename(columns = {'idDrink':'ID', 'strDrink':'Name'}, inplace = True)
 
         return cock_id_new
-
-
-# In[3]:
-
 
 def get_cocktail(name):
     '''
@@ -136,10 +121,6 @@ def get_cocktail(name):
         html = HTML(cock_info.to_html(escape=False ,formatters=dict(Picture=path_to_image_html)))
         return html
 
-
-# In[4]:
-
-
 def get_one(number):
     '''
     Introduction:
@@ -193,10 +174,6 @@ def get_one(number):
 
         return html
 
-
-# In[5]:
-
-
 def get_ingredient(cock_name):
     '''
     Introduction:
@@ -243,10 +220,6 @@ def get_ingredient(cock_name):
         all_ingredient.fillna(' ',inplace=True)
 
         return all_ingredient
-
-
-# In[6]:
-
 
 def get_pics(pics):
     '''
@@ -298,10 +271,6 @@ def get_pics(pics):
 
         html = HTML(pics_new.to_html(escape=False ,formatters=dict(Picture=path_to_image_html)))
         return html
-
-
-# In[7]:
-
 
 def description(history):
     '''
@@ -356,40 +325,39 @@ def description(history):
 
 
 def is_in(ingredient):
-   '''
-   Introduction:
-   -------------
-   This function allows users to check whether the ingredient they input is in the cocktails.
+    '''
+    Introduction:
+    -------------
+    This function allows users to check whether the ingredient they input is in the cocktails.
 
-   Inputs:
-   -------------
-   'ingredient': str. The name of ingredient the users input.
+    Inputs:
+    -------------
+    'ingredient': str. The name of ingredient the users input.
 
-   Outputs:
-   -------------
-   One sentence to tell the users whether the ingredient they input is a component of the cocktail.
+    Outputs:
+    -------------
+    One sentence to tell the users whether the ingredient they input is a component of the cocktail.
 
-   Example:
-   -------------
-   >>>g = description('gin')
-   >>>g
-   'The ingredient is in the list.'
-   '''
-   try:
-       ingre = ingredient.capitalize()
-       r = requests.get('http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
-       r.raise_for_status()
+    Example:
+    -------------
+    >>>g = description('gin')
+    >>>g
+    'The ingredient is in the list.'
+    '''
+    try:
+        ingre = ingredient.capitalize()
+        r = requests.get('http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
+        r.raise_for_status()
+    except:
+        print("The ingredient you input is not valid, try another ingredient!")
 
-   except:
-       print("The ingredient you input is not valid, try another ingredient!")
-
-   else:
-       dump = json.dumps(r.json(), indent = 2)
-       ingredients = json.loads(dump)
-       all_ingredients = pd.DataFrame(ingredients['drinks'])
-       all_ingredient = [a for a in all_ingredients.strIngredient1]
-       if (ingre in all_ingredient) or (ingredient in all_ingredient):
-           return "The ingredient is in the list."
-       else:
-           return "The ingredient is not in the list, please try another ingredient"
+    else:
+        dump = json.dumps(r.json(), indent = 2)
+        ingredients = json.loads(dump)
+        all_ingredients = pd.DataFrame(ingredients['drinks'])
+        all_ingredient = [a for a in all_ingredients.strIngredient1]
+        if (ingre in all_ingredient) or (ingredient in all_ingredient):
+            return "The ingredient is in the list."
+        else:
+            return "The ingredient is not in the list, please try another ingredient"
 
