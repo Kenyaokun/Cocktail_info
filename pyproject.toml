@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "cocktail_info"
-version = "0.1.1"
+version = "0.1.2"
 description = "Get the information of cocktails."
 authors = ["Kun Yao"]
 license = "MIT"
 readme = "README.md"
 documentation = 'https://cocktail_info.readthedocs.io'
 homepage = "https://github.com/Kenyaokun/cocktail_info"
-repository = "https://https://github.com/Kenyaokun/cocktail_info"
+repository = "https://github.com/Kenyaokun/cocktail_info"
 
 [tool.poetry.dependencies]
 python = "^3.9"
