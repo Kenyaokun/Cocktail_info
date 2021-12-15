@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import re
 from IPython.display import Image, HTML
-get_ipython().run_line_magic('matplotlib', 'inline')
 import warnings
 warnings.filterwarnings('ignore')
 
