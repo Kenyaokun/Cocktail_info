@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cocktail_info"
-version = "0.1.6"
+version = "0.1.7"
 description = "Get the information of cocktails."
 authors = ["Kun Yao"]
 license = "MIT"
