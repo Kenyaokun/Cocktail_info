@@ -11,7 +11,7 @@ def get_id(text):
     '''
     Introduction:
     -------------
-    This function can help users to get the id of the cocktail they input so that they could search for the exact id of the cocktail they want for further search.
+    This function can help users to get the id of the cocktail they input so that they could use for further search.
 
     Inputs:
     -------------
@@ -126,7 +126,7 @@ def get_one(number):
     '''
     Introduction:
     -------------
-    This function can help users to get exact one information about the cocktail they want through the unique id.
+    This function can help users to get the information of the exact one cocktail they want through the unique id.
 
     Inputs:
     -------------
@@ -180,7 +180,7 @@ def get_ingredient(cock_name):
     '''
     Introduction:
     -------------
-    This function can help users to get the names and the scale of the ingredients in the cocktail after users input the name of cocktail. 
+    This function can help users to get the names and measures of the ingredients in the cocktail after the users input the name of cocktails. 
 
     Inputs:
     -------------
@@ -228,7 +228,7 @@ def get_pics(pics):
     '''
     Introduction:
     -------------
-    This function can help users to get the pictures of the cocktails along with the names they input.
+    This function can help users to get the pictures of the cocktails along with the IDs and names they input.
 
     Inputs:
     -------------
@@ -280,11 +280,11 @@ def description(history):
     '''
     Introduction:
     -------------
-    This function can give users the introduction of the cocktails the users input.
+    This function can give users the introduction of cocktails users input.
 
     Inputs:
     -------------
-    'description': str. The name of cocktail the users input.
+    'history': str. The name of cocktail the users input.
 
     Outputs:
     -------------
@@ -316,15 +316,11 @@ def description(history):
 
         return all_info
 
-
-# In[8]:
-
-
 def is_in(ingredient):
     '''
     Introduction:
     -------------
-    This function allows users to check whether the ingredient they input is in the cocktails.
+    This function allows users to check whether the ingredient they input is in the ingredients list.
 
     Inputs:
     -------------
