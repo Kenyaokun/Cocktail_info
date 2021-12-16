@@ -25,7 +25,7 @@ def get_id(text):
     -------------
     >>>a = cocktail_info.get_id('gin')
     >>>a
-      Drink Drink
+        ID   Drink
     0 11410 Gin Fizz
     1 11417 Gin Sour
     2 11936 Pink Gin
@@ -79,7 +79,7 @@ def get_cocktail(name):
     -------------
     >>>b = cocktail_info.get_cocktail('gin')
     >>>b
-    ID Name Category Alcoholic Glass Instructions Picture
+        ID Name Category Alcoholic Glass Instructions Picture
     0 11410 Gin Fizz Ordinary Drink Alcoholic Highball glass Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water. 
     1 11417 Gin Sour Ordinary Drink Alcoholic Whiskey sour glass In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry. 
     2 11936 Pink Gin Ordinary Drink Alcoholic White wine glass Pour the bitters into a wine glass. Swirl the glass to coat the inside with the bitters, shake out the excess. Pour the gin into the glass. Do not add ice. 
@@ -138,7 +138,7 @@ def get_one(number):
     -------------
     >>>c = cocktail_info.get_id('178342')
     >>>c
-    ID Name Category Alcoholic Glass Instructions Picture
+         ID Name Category Alcoholic Glass Instructions Picture
     0 178342 Gin and Soda Cocktail Alcoholic Highball glass Pour the Gin and Soda water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge. 
     (The 'Picture' could show the pictures of cocktail, but the example could not show this kind of files.)
 
@@ -238,8 +238,8 @@ def get_pics(pics):
     -------------
     >>>e = cocktail_info.get_pics('whisky')
     >>>e
-    ID Drink_Name Picture
-    0 16262 H.D. 
+        ID Drink_Name Picture
+    0 16262   H.D. 
     (The 'Picture' could show the pictures of cocktail, but the example could not show this kind of files.)
 
     '''      
@@ -289,17 +289,8 @@ def description(history):
     -------------
     >>>f = cocktail_info.description('gin')
     >>>f
-    'The name of the wine you type in is or similar to: Gin. 
-    Gin is a distilled alcoholic drink that derives its predominant flavour from juniper berries (Juniperus communis). 
-    Gin is one of the broadest categories of spirits, all of various origins, styles, and flavour profiles, that revolve around juniper as a common ingredient. 
-    From its earliest origins in the Middle Ages, the drink has evolved from a herbal medicine to an object of commerce in the spirits industry. 
-    Gin emerged in England after the introduction of the jenever, a Dutch liquor which originally had been a medicine. 
-    Although this development had been taking place since early 17th century, gin became widespread after the William of Orange-led 1688 Glorious Revolution and subsequent import restrictions on French brandy. 
-    Gin today is produced in subtly different ways, from a wide range of herbal ingredients, giving rise to a number of distinct styles and brands. 
-    After juniper, gin tends to be flavoured with botanical/herbal, spice, floral or fruit-flavours or often a combination. 
-    It is most commonly consumed mixed with tonic water. 
-    Gin is also often used as a base spirit to produce flavoured gin-based liqueurs such as, for example, Sloe gin, traditionally by the addition of fruit, flavourings and sugar.'
-
+    'The name of the wine you type in is or similar to: Gin. Gin is a distilled alcoholic drink that derives its predominant flavour from juniper berries (Juniperus communis). Gin is one of the broadest categories of spirits, all of various origins, styles, and flavour profiles, that revolve around juniper as a common ingredient. From its earliest origins in the Middle Ages, the drink has evolved from a herbal medicine to an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch liquor which originally had been a medicine. Although this development had been taking place since early 17th century, gin became widespread after the William of Orange-led 1688 Glorious Revolution and subsequent import restrictions on French brandy. Gin today is produced in subtly different ways, from a wide range of herbal ingredients, giving rise to a number of distinct styles and brands. After juniper, gin tends to be flavoured with botanical/herbal, spice, floral or fruit-flavours or often a combination. It is most commonly consumed mixed with tonic water. Gin is also often used as a base spirit to produce flavoured gin-based liqueurs such as, for example, Sloe gin, traditionally by the addition of fruit, flavourings and sugar.'
+    
     '''
 
     try:
