@@ -22,6 +22,19 @@ def test_get_cocktail():
     expected = type(HTML())
     
     assert type(actual) == expected, 'The test does not pass.'
+
+def test_get_one():
+    one = 12057
+    actual = cocktail_info.get_one(one)
+    expected = type(HTML())
+    
+    assert type(actual) == expected, 'The test does not pass.'
+
+def test_get_ingredient():
+    text = 'gin'
+    actual = cocktail_info.get_ingredient(text)
+    
+    assert type(actual) == pd.DataFrame, 'The test does not pass.'
     
 def test_get_pics():
     pic_no = 'gin'
@@ -29,12 +42,6 @@ def test_get_pics():
     expected = type(HTML())
     
     assert type(actual) == expected, 'The test does not pass.'
-    
-def test_get_ingredient():
-    text = 'gin'
-    actual = cocktail_info.get_ingredient(text)
-    
-    assert type(actual) == pd.DataFrame, 'The test does not pass.'
     
 def test_get_description():
     history = 'gin'

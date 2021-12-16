@@ -136,7 +136,7 @@ def get_one(number):
 
     Example:
     -------------
-    >>>c = cocktail_info.get_id('178342')
+    >>>c = cocktail_info.get_one('178342')
     >>>c
          ID Name Category Alcoholic Glass Instructions Picture
     0 178342 Gin and Soda Cocktail Alcoholic Highball glass Pour the Gin and Soda water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge. 
@@ -330,7 +330,7 @@ def is_in(ingredient):
 
     Example:
     -------------
-    >>>g = cocktail_info.description('gin')
+    >>>g = cocktail_info.is_in('gin')
     >>>g
     'The ingredient is in the list.'
     '''
