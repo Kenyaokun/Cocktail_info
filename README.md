@@ -10,7 +10,51 @@ $ pip install cocktail_info
 
 ## Usage
 
-- TODO
+```bash
+from cocktail_info import cocktail_info
+```
+
+### Get the id of the cocktail
+
+```bash
+cocktail_info.get_id('gin')
+```
+
+### Get the information of the cocktails
+
+```bash
+cocktail_info.get_cocktail('gin')
+```
+
+### Get the information of the exact cocktail you want to know
+
+```bash
+cocktail_info.get_one('gin')
+```
+
+### Get the ingredients of the cocktails
+
+```bash
+cocktail_info.get_ingredient('gin')
+```
+
+### Get the pictures of the cocktails
+
+```bash
+cocktail_info.get_pics('gin')
+```
+
+### Get the introduction of the cocktail
+
+```bash
+cocktail_info.description('gin')
+```
+
+### Tell whether one ingredient is in the cocktail
+
+```bash
+cocktail_info.is_in('gin')
+```
 
 ## Contributing
 

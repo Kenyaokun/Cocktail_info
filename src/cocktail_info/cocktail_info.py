@@ -23,9 +23,9 @@ def get_id(text):
 
     Example:
     -------------
-    >>>a = get_id('gin')
+    >>>a = cocktail_info.get_id('gin')
     >>>a
-    idDrink strDrink
+      Drink Drink
     0 11410 Gin Fizz
     1 11417 Gin Sour
     2 11936 Pink Gin
@@ -77,7 +77,7 @@ def get_cocktail(name):
 
     Example:
     -------------
-    >>>b = get_cocktail('gin')
+    >>>b = cocktail_info.get_cocktail('gin')
     >>>b
     ID Name Category Alcoholic Glass Instructions Picture
     0 11410 Gin Fizz Ordinary Drink Alcoholic Highball glass Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water. 
@@ -136,7 +136,7 @@ def get_one(number):
 
     Example:
     -------------
-    >>>c = get_id('178342')
+    >>>c = cocktail_info.get_id('178342')
     >>>c
     ID Name Category Alcoholic Glass Instructions Picture
     0 178342 Gin and Soda Cocktail Alcoholic Highball glass Pour the Gin and Soda water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge. 
@@ -189,7 +189,7 @@ def get_ingredient(cock_name):
 
     Example:
     -------------
-    >>>d = get_ingredient('vodka')
+    >>>d = cocktail_info.get_ingredient('vodka')
     >>>d
         idDrink strDrink strIngredient1 strIngredient2 strIngredient3 strIngredient4 strIngredient5 strIngredient6 strMeasure1 strMeasure2 strMeasure3 strMeasure4 strMeasure5
     0 13196 Long vodka Vodka Lime Angostura bitters Tonic water Ice 5 cl 1/2 4 dashes 1 dl Schweppes 4
@@ -236,7 +236,7 @@ def get_pics(pics):
 
     Example:
     -------------
-    >>>e = get_pics('whisky')
+    >>>e = cocktail_info.get_pics('whisky')
     >>>e
     ID Drink_Name Picture
     0 16262 H.D. 
@@ -287,7 +287,7 @@ def description(history):
 
     Example:
     -------------
-    >>>f = description('gin')
+    >>>f = cocktail_info.description('gin')
     >>>f
     'The name of the wine you type in is or similar to: Gin. 
     Gin is a distilled alcoholic drink that derives its predominant flavour from juniper berries (Juniperus communis). 
@@ -339,7 +339,7 @@ def is_in(ingredient):
 
     Example:
     -------------
-    >>>g = description('gin')
+    >>>g = cocktail_info.description('gin')
     >>>g
     'The ingredient is in the list.'
     '''
